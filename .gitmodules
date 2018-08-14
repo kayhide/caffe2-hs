@@ -1,0 +1,3 @@
+[submodule "extlib/pytorch"]
+	path = extlib/pytorch
+	url = https://github.com/pytorch/pytorch
