@@ -12,6 +12,12 @@ category:            Web
 extra-source-files:
   - README.md
 
+custom-setup:
+  dependencies:
+    - base
+    - Cabal
+    - hoppy-runtime >= 0.5 && < 0.6
+
 dependencies:
   - base >= 4.7 && < 5
   - async
@@ -41,7 +47,10 @@ dependencies:
   - aeson
   - lens-aeson
   - proto-lens
+  - hoppy-runtime
   - caffe2-proto
+  - caffe2-generator
+  - caffe2-cpp
 
 default-extensions:
   - AutoDeriveTypeable
@@ -83,7 +92,16 @@ default-extensions:
   - TypeSynonymInstances
   - ViewPatterns
 
+extra-libraries:
+  - caffe2
+  - caffe2-wrapper
+
+library:
+  source-dirs:      [src, src_gen]
+
 executables:
   caffe2:
-    source-dirs:      src
+    source-dirs:      app
     main:             Main.hs
+    dependencies:
+      - caffe2

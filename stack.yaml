@@ -2,15 +2,21 @@ resolver: lts-11.14
 
 packages:
   - caffe2-proto
+  - caffe2-generator
+  - caffe2-cpp
   - caffe2
 
 extra-deps:
   - lens-labels-0.2.0.1
   - proto-lens-0.3.1.0
   - proto-lens-protoc-0.3.1.0
+  - hoppy-generator-0.5.1
+  - hoppy-std-0.5.0
+  - hoppy-runtime-0.5.0
 
-# extra-include-dirs:
-#   - extlib/pytorch/build/install/include
+extra-include-dirs:
+  - extlib/pytorch/build/install/include
 
-# extra-lib-dirs:
-#   - extlib/pytorch/build/install/lib
+extra-lib-dirs:
+  - extlib/pytorch/build/install/lib
+  - .libs/lib
