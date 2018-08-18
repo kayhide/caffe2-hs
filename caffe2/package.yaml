@@ -1,0 +1,89 @@
+name:                caffe2
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/githubuser/caffe2#readme
+license:             BSD3
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2018 Author name here
+category:            Web
+
+extra-source-files:
+  - README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - async
+  - bytestring
+  - containers
+  - mtl
+  - stm
+  - text
+  - transformers
+  - unordered-containers
+  - vector
+  - filepath
+  - directory
+  - process
+  - unix
+  - deepseq
+  - split
+  - streams
+  - safe
+  - binary
+  - classy-prelude
+  - mono-traversable
+  - time
+  - random
+  - data-default
+  - lens
+  - aeson
+  - lens-aeson
+  - proto-lens
+  - caffe2-proto
+
+default-extensions:
+  - AutoDeriveTypeable
+  - BangPatterns
+  - BinaryLiterals
+  - ConstraintKinds
+  - DataKinds
+  - DefaultSignatures
+  - DeriveDataTypeable
+  - DeriveFoldable
+  - DeriveFunctor
+  - DeriveGeneric
+  - DeriveTraversable
+  - DoAndIfThenElse
+  - EmptyDataDecls
+  - ExistentialQuantification
+  - FlexibleContexts
+  - FlexibleInstances
+  - FunctionalDependencies
+  - GADTs
+  - GeneralizedNewtypeDeriving
+  - InstanceSigs
+  - KindSignatures
+  - LambdaCase
+  - MultiParamTypeClasses
+  - MultiWayIf
+  - NamedFieldPuns
+  - NoImplicitPrelude
+  - OverloadedStrings
+  - PartialTypeSignatures
+  - PatternGuards
+  - PolyKinds
+  - RankNTypes
+  - RecordWildCards
+  - ScopedTypeVariables
+  - StandaloneDeriving
+  - TupleSections
+  - TypeFamilies
+  - TypeSynonymInstances
+  - ViewPatterns
+
+executables:
+  caffe2:
+    source-dirs:      src
+    main:             Main.hs

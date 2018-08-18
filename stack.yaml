@@ -2,6 +2,7 @@ resolver: lts-11.14
 
 packages:
   - caffe2-proto
+  - caffe2
 
 extra-deps:
   - lens-labels-0.2.0.1
