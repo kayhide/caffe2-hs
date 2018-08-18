@@ -1,0 +1,20 @@
+name:                caffe2-proto
+version:             0.1.0.0
+
+custom-setup:
+  dependencies:
+    - base
+    - Cabal
+    - proto-lens-protoc
+
+extra-source-files:
+  - proto/**/*.proto
+
+dependencies:
+  - base >= 4.7 && < 5
+  - proto-lens-protoc
+
+library:
+  exposed-modules:
+    - Proto.Caffe2
+    - Proto.Caffe2_Fields

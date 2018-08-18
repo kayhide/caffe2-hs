@@ -1,0 +1,15 @@
+resolver: lts-11.14
+
+packages:
+  - caffe2-proto
+
+extra-deps:
+  - lens-labels-0.2.0.1
+  - proto-lens-0.3.1.0
+  - proto-lens-protoc-0.3.1.0
+
+# extra-include-dirs:
+#   - extlib/pytorch/build/install/include
+
+# extra-lib-dirs:
+#   - extlib/pytorch/build/install/lib
